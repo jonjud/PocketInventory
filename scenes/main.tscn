@@ -26,5 +26,13 @@ offset_right = 196.0
 offset_bottom = 102.0
 text = "Add Stone"
 
+[node name="Button3" type="Button" parent="CanvasLayer" unique_id=2084368256]
+offset_left = 121.0
+offset_top = 116.0
+offset_right = 192.0
+offset_bottom = 147.0
+text = "Amount"
+
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="add_wood"]
 [connection signal="pressed" from="CanvasLayer/Button2" to="." method="add_stone"]
+[connection signal="pressed" from="CanvasLayer/Button3" to="." method="get_all_amount_btn"]

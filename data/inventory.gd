@@ -22,3 +22,9 @@ func add_item(item : ItemData, amount : int) -> void :
 		storage.append(new_entry)
 	for j in storage :
 		print(j.item.item_name ," ", j.amount )
+
+func get_amount(item : ItemData) -> int :
+	for i in storage :
+		if i.item == item :
+			return i.amount
+	return 0
