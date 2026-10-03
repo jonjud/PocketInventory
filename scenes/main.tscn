@@ -1,3 +1,30 @@
 [gd_scene format=3 uid="uid://dwv72geypuvth"]
 
+[ext_resource type="Script" uid="uid://bx1v2gc22l3vg" path="res://scenes/main.gd" id="1_o5qli"]
+[ext_resource type="Script" uid="uid://b1pjja7sxodsc" path="res://data/inventory.gd" id="2_0wfyh"]
+
 [node name="main" type="Node2D" unique_id=993339977]
+script = ExtResource("1_o5qli")
+
+[node name="Inventory" type="Node" parent="." unique_id=1243713887]
+script = ExtResource("2_0wfyh")
+metadata/_custom_type_script = "uid://b1pjja7sxodsc"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1402869548]
+
+[node name="Button" type="Button" parent="CanvasLayer" unique_id=1506837751]
+offset_left = 110.0
+offset_top = 23.0
+offset_right = 196.0
+offset_bottom = 54.0
+text = "Add wood"
+
+[node name="Button2" type="Button" parent="CanvasLayer" unique_id=592692067]
+offset_left = 109.0
+offset_top = 71.0
+offset_right = 196.0
+offset_bottom = 102.0
+text = "Add Stone"
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="add_wood"]
+[connection signal="pressed" from="CanvasLayer/Button2" to="." method="add_stone"]
