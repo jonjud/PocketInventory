@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://cgd4lnfwj1l75"]
+
+[ext_resource type="Script" uid="uid://bep10pgqnr72j" path="res://scenes/inventory_ui.gd" id="1_tahbm"]
+
+[node name="InventoryUI" type="Control" unique_id=371462304]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_tahbm")
+
+[node name="EntryList" type="VBoxContainer" parent="." unique_id=198065421]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0

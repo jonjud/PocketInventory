@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://c1bnxcus12qli"]
+
+[ext_resource type="Script" uid="uid://b7pmkmp056y03" path="res://scenes/inventory_entry_ui.gd" id="1_xfxhn"]
+
+[node name="Inventory_Entry_UI" type="Control" unique_id=1636658009]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_xfxhn")
+
+[node name="ItemLabel" type="Label" parent="." unique_id=684857396]
+layout_mode = 0
+offset_right = 320.0
+offset_bottom = 53.0
+text = "fdfdfdfdfd"
+horizontal_alignment = 1
